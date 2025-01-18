@@ -1,0 +1,122 @@
+:root {
+    --count: 12; /* Number of cards */
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .void {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+    aspect-ratio: 1 / 1;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+  
+  li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center -280px; /* Semi-circle radius */
+  }
+  
+  li:nth-child(1) {
+    transform: rotate(-90deg) translateX(-250px) rotate(90deg); /* January */
+  }
+  li:nth-child(2) {
+    transform: rotate(-73.64deg) translateX(-250px) rotate(73.64deg); /* February */
+  }
+  li:nth-child(3) {
+    transform: rotate(-57.27deg) translateX(-250px) rotate(57.27deg); /* March */
+  }
+  li:nth-child(4) {
+    transform: rotate(-40.91deg) translateX(-250px) rotate(40.91deg); /* April */
+  }
+  li:nth-child(5) {
+    transform: rotate(-24.55deg) translateX(-250px) rotate(24.55deg); /* May */
+  }
+  li:nth-child(6) {
+    transform: rotate(-8.18deg) translateX(-250px) rotate(8.18deg); /* June */
+  }
+  li:nth-child(7) {
+    transform: rotate(8.18deg) translateX(-250px) rotate(-8.18deg); /* July */
+  }
+  li:nth-child(8) {
+    transform: rotate(24.55deg) translateX(-250px) rotate(-24.55deg); /* August */
+  }
+  li:nth-child(9) {
+    transform: rotate(40.91deg) translateX(-250px) rotate(-40.91deg); /* September */
+  }
+  li:nth-child(10) {
+    transform: rotate(57.27deg) translateX(-250px) rotate(-57.27deg); /* October */
+  }
+  li:nth-child(11) {
+    transform: rotate(73.64deg) translateX(-250px) rotate(-73.64deg); /* November */
+  }
+  li:nth-child(12) {
+    transform: rotate(90deg) translateX(-250px) rotate(-90deg); /* December */
+  }
+  
+  
+  .card {
+    width: 200px;
+    height: px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffe8e8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #535062;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  .model-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0d0d0d;
+  }
+  
+  /* Middle Circle */
+  .center-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #e9fffb;
+    box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-circle::before {
+    content: "Year";
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B2ED0;
+    text-align: center;
+  }
+  
